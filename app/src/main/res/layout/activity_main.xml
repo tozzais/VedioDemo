@@ -6,13 +6,38 @@
     android:orientation="vertical"
     >
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:progress="20"
+                android:max="100"
+                android:thumb="@null"
+                android:progressDrawable="@drawable/seekbar_style2"
+                android:indeterminate="false"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginRight="-20dp"
+
+                />
+        </LinearLayout>
 
 
+    </RelativeLayout>
 
 
 </LinearLayout>
